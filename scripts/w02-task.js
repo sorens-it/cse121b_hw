@@ -12,7 +12,7 @@ const profilePicture = "images/profilePicture.png"; // Declare and instantiate a
 
 const nameElement = document.getElementById("fullName"); // Use the document.getElementById() method to get the HTML element with the id of name and store it in a const variable named "nameElement".
 const foodElement = document.getElementById("food"); // Use the document.getElementById() method to get the HTML element with the id of food and store it in a const variable named "foodElement".
-const yearElement = document.querySelector("#year"); // Use the document.querySelector() method to get the element with the id of "year" and store it in a variable named "yearElement".
+const yearElement = document.querySelector("year"); // Use the document.querySelector() method to get the element with the id of "year" and store it in a variable named "yearElement".
 
 /* Step 4 - Adding Content */
 
@@ -24,7 +24,7 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`); // Use the set
 
 /* Step 5 - Array */
 
-const favoriteFoods = ["Pizza", "Sushi", "Burgers"]; // Declare an array variable to hold your favorite foods.
+let favoriteFoods = ["Pizza", "PMPP", "Burgers"]; // Declare an array variable to hold your favorite foods.
 foodElement.textContent = favoriteFoods.join(", "); // Modify the HTML element with the id of food to display your favorite foods array.
 
 // Declare and instantiate a variable to hold another single favorite food item.
